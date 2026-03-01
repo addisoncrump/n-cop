@@ -239,7 +239,7 @@ int robbers_turn_evaluate(const GameState& graph, const int num_cops, const int 
 void unit_tests() {
     // Silence output during unit tests
     streambuf* orig_buf = cout.rdbuf();
-    // cout.rdbuf(nullptr);
+    cout.rdbuf(nullptr);
 
     {
         Bitboard cop_graph = get_cop_starting_bitboard_for_size_k_graph(4);
